@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f2f2;
+  color: #333333;
+}
+
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #003366;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.btn-primary {
+  background-color: #003366;
+  color: white;
+  border-radius: 8px;
+  height: 44px;
+  padding: 0 16px;
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-secondary {
+  background-color: #f2f2f2;
+  color: #003366;
+  border-radius: 8px;
+  height: 44px;
+  padding: 0 16px;
+  font-weight: 400;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  padding: 0 12px;
+}
+
+.textarea {
+  width: 100%;
+  height: 88px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  padding: 12px;
+  resize: vertical;
+}
+
+.select {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  padding: 0 12px;
+  background-color: white;
+}
+
+.badge-info {
+  background-color: #b3c7e6;
+  color: #333333;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.badge-warning {
+  background-color: #ffeb99;
+  color: #333333;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.badge-error {
+  background-color: #f8b6b7;
+  color: #333333;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
