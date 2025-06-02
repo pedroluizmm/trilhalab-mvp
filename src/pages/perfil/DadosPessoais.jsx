@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import { ArrowLeft, User, Mail, Phone, MapPin, GraduationCap, Edit, Save, X } from "lucide-react"
+import { ArrowLeft, User, Mail, Phone, MapPin, GraduationCap, Edit, Save, X, Trophy, Award, Link as LinkIcon } from "lucide-react"
 
 const DadosPessoais = () => {
   const [isEditing, setIsEditing] = useState(false)
@@ -175,7 +175,7 @@ const DadosPessoais = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-lg shadow-card p-6">
+        <div className="bg-white rounded-lg shadow-card p-6 mb-6">
           <h3 className="text-lg font-medium text-primary mb-4">Biografia</h3>
           {isEditing ? (
             <textarea
@@ -188,6 +188,51 @@ const DadosPessoais = () => {
           ) : (
             <p className="text-gray-dark">{formData.bio}</p>
           )}
+        </div>
+
+        {/* Atalhos Rápidos */}
+        <div className="bg-white rounded-lg shadow-card p-6 mt-6">
+          <h3 className="text-lg font-medium text-primary mb-4">Acesso Rápido</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Link
+              to="/gamificacao"
+              className="flex items-center gap-3 p-4 border border-gray-light rounded-lg hover:bg-primary-light transition-colors"
+            >
+              <div className="bg-primary-light rounded-md p-2">
+                <Trophy size={20} className="text-primary" />
+              </div>
+              <div>
+                <h4 className="font-medium text-primary">Gamificação</h4>
+                <p className="text-sm text-gray-dark">Pontos e conquistas</p>
+              </div>
+            </Link>
+
+            <Link
+              to="/perfil/certificados"
+              className="flex items-center gap-3 p-4 border border-gray-light rounded-lg hover:bg-primary-light transition-colors"
+            >
+              <div className="bg-primary-light rounded-md p-2">
+                <Award size={20} className="text-primary" />
+              </div>
+              <div>
+                <h4 className="font-medium text-primary">Certificados</h4>
+                <p className="text-sm text-gray-dark">Seus certificados</p>
+              </div>
+            </Link>
+
+            <Link
+              to="/perfil/integracoes"
+              className="flex items-center gap-3 p-4 border border-gray-light rounded-lg hover:bg-primary-light transition-colors"
+            >
+              <div className="bg-primary-light rounded-md p-2">
+                <LinkIcon size={20} className="text-primary" />
+              </div>
+              <div>
+                <h4 className="font-medium text-primary">Integrações</h4>
+                <p className="text-sm text-gray-dark">Conectar contas</p>
+              </div>
+            </Link>
+          </div>
         </div>
       </main>
     </div>

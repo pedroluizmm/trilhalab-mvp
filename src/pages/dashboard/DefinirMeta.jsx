@@ -26,7 +26,7 @@ const DefinirMeta = () => {
   }
 
   return (
-    <div className="pb-4">
+    <div className="pb-4 mt-6">
       <div className="flex items-center mb-6">
         <Link to="/dashboard/metas" className="text-primary mr-4">
           <ArrowLeft size={24} />

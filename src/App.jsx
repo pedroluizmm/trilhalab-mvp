@@ -22,12 +22,13 @@ import Metas from "./pages/dashboard/Metas"
 import DefinirMeta from "./pages/dashboard/DefinirMeta"
 import Grupos from "./pages/dashboard/Grupos"
 import GrupoDetalhe from "./pages/dashboard/GrupoDetalhe"
-import Gamificacao from "./pages/Gamificacao"
+
 
 // Profile pages
 import DadosPessoais from "./pages/perfil/DadosPessoais"
 import Certificados from "./pages/perfil/Certificados"
 import Integracoes from "./pages/perfil/Integracoes"
+import Gamificacao from "./pages/perfil/Gamificacao"
 
 // Admin pages
 import Usuarios from "./pages/admin/Usuarios"

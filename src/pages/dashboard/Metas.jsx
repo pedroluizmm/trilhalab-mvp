@@ -54,7 +54,7 @@ const Metas = () => {
   })
 
   return (
-    <div className="pb-4">
+    <div className="pb-4 mt-6">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-medium text-primary">Metas</h1>
         <Link to="/dashboard/metas/definir" className="btn-primary flex items-center gap-2">
@@ -89,7 +89,7 @@ const Metas = () => {
         </div>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-4 ">
         {metasFiltradas.map((meta) => (
           <div key={meta.id} className="bg-white rounded-lg shadow-card p-4">
             <div className="flex justify-between items-start mb-3">

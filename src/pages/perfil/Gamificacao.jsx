@@ -43,11 +43,11 @@ const conquistas = [
 ]
 
 const ranking = [
-  { posicao: 1, nome: "João Silva", pontos: 2450, avatar: "JS" },
+  { posicao: 1, nome: "João Silva", pontos: 2450, avatar: "JS", isUser: true },
   { posicao: 2, nome: "Maria Oliveira", pontos: 2380, avatar: "MO" },
   { posicao: 3, nome: "Carlos Santos", pontos: 2250, avatar: "CS" },
   { posicao: 4, nome: "Ana Souza", pontos: 2100, avatar: "AS" },
-  { posicao: 5, nome: "Você", pontos: 1850, avatar: "VC", isUser: true },
+  { posicao: 5, nome: "Victor Caetano", pontos: 1850, avatar: "VC" },
 ]
 
 const Gamificacao = () => {
@@ -170,7 +170,7 @@ const Gamificacao = () => {
               >
                 <div className="flex items-center gap-3">
                   <div
-                    className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${user.posicao <= 3 ? "bg-primary text-white" : "bg-gray-light text-gray-dark"
+                    className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${user.posicao <= 3 ? "bg-primary text-blue-500" : "bg-gray-light text-gray-dark"
                       }`}
                   >
                     {user.posicao}

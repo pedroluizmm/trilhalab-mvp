@@ -63,7 +63,7 @@ const Eventos = () => {
   )
 
   return (
-    <div className="pb-4">
+    <div className="pb-4 mt-6">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-medium text-primary">Eventos</h1>
         <Link to="/dashboard/eventos/meus" className="btn-secondary">

@@ -30,7 +30,7 @@ const meusEventosData = [
 
 const EventosMeus = () => {
   return (
-    <div className="pb-4">
+    <div className="pb-4 mt-6">
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-medium text-primary">Meus Eventos</h1>
         <Link to="/dashboard/eventos" className="btn-secondary">

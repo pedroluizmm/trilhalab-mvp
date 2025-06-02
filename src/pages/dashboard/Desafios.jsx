@@ -60,7 +60,7 @@ const Desafios = () => {
   })
 
   return (
-    <div className="pb-4">
+    <div className="pb-4 mt-6">
       <h1 className="text-2xl font-medium text-primary mb-6">Desafios</h1>
 
       <div className="bg-white rounded-lg shadow-card p-4 mb-6">
